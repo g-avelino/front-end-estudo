@@ -17,12 +17,6 @@ projeto-ong/
 │   ├── projetos.html
 │   └── cadastro.html
 │
-├── css/                   # Estilos
-│   └── 
-│
-├── js/                    # Scripts
-│   └── 
-│
 ├── imagens/               # Imagens originais
 │   ├── equipe.jpg
 │   ├── educacao.jpg
@@ -31,7 +25,3 @@ projeto-ong/
 │
 ├── imagens-otimizadas/    # Versões otimizadas em .webp
 │   ├── doacao-alimentos.webp
-│
-├── fonts/                 # Fontes personalizadas
-│
-└── docs/                  # Documentos auxiliares
