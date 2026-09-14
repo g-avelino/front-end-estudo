@@ -10,3 +10,28 @@ O objetivo é criar um site institucional para a ONG Esperança, com páginas de
 ---
 
 ## 📂 Estrutura de Pastas
+projeto-ong/
+│
+├── html/                  # Páginas principais
+│   ├── index.html
+│   ├── projetos.html
+│   └── cadastro.html
+│
+├── css/                   # Estilos
+│   └── 
+│
+├── js/                    # Scripts
+│   └── 
+│
+├── imagens/               # Imagens originais
+│   ├── equipe.jpg
+│   ├── educacao.jpg
+│   ├── saude.jpg
+│   ├── doacao-alimentos.jpg
+│
+├── imagens-otimizadas/    # Versões otimizadas em .webp
+│   ├── doacao-alimentos.webp
+│
+├── fonts/                 # Fontes personalizadas
+│
+└── docs/                  # Documentos auxiliares
