@@ -2,54 +2,51 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ONG Esperança</title>
+  <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
-  <header>
+  <header class="header">
     <h1>ONG Esperança</h1>
-    <nav>
+    <div class="hamburger">☰</div>
+    <nav class="nav">
       <ul>
-        <li><a href="index.html">Início</a></li>
-        <li><a href="projetos.html">Projetos</a></li>
-        <li><a href="cadastro.html">Cadastro</a></li>
-        <li><a href="#contato">Contato</a></li>
+        <li>Home</li>
+        <li>Projetos
+          <ul>
+            <li>Educação</li>
+            <li>Saúde</li>
+          </ul>
+        </li>
+        <li>Contato</li>
       </ul>
     </nav>
   </header>
 
-  <main>
-    <section id="sobre">
-      <h2>Quem Somos</h2>
-      <img src="imagens/equipe.jpg" alt="Equipe da ONG reunida em atividade comunitária">
-      <p>A ONG Esperança atua há mais de 10 anos promovendo inclusão social e apoio às comunidades em situação de vulnerabilidade.</p>
-    </section>
-
-    <section id="projetos">
-      <h2>Nossos Projetos</h2>
-      <article>
-        <h3>Projeto Educação</h3>
-        <img src="imagens/educacao.jpg" alt="Crianças participando de atividades educativas">
-        <p>Oferecemos aulas de reforço escolar e oficinas culturais para jovens.</p>
-      </article>
-      <article>
-        <h3>Projeto Saúde</h3>
-        <img src="imagens/saude.jpg" alt="Profissionais de saúde atendendo comunidade">
-        <p>Realizamos campanhas de prevenção e atendimento básico de saúde.</p>
-      </article>
-    </section>
-
-    <section id="contato">
-      <h2>Entre em Contato</h2>
-      <address>
-        <p>Email: <a href="mailto:contato@ongesperanca.org">contato@ongesperanca.org</a></p>
-        <p>Telefone: <a href="tel:+5511999999999">(11) 99999-9999</a></p>
-        <p>Endereço: Rua da Solidariedade, 123 - Guarulhos/SP</p>
-      </address>
-    </section>
+  <main class="container">
+    <div class="card">
+      <h2>Projeto Educação</h2>
+      <p>Apoio escolar para crianças.</p>
+      <button class="btn">Saiba mais</button>
+    </div>
+    <div class="card">
+      <h2>Projeto Saúde</h2>
+      <p>Atendimento médico comunitário.</p>
+      <button class="btn">Saiba mais</button>
+    </div>
   </main>
 
-  <footer>
-    <p>&copy; 2026 ONG Esperança - Todos os direitos reservados</p>
+  <form class="form">
+    <label for="nome">Nome</label>
+    <input type="text" id="nome" class="form-input" required>
+    <button class="btn">Enviar</button>
+  </form>
+
+  <footer class="footer">
+    <p>&copy; 2026 ONG Esperança</p>
   </footer>
+
+  <script src="js/scripts.js"></script>
 </body>
 </html>

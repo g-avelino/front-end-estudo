@@ -1,0 +1,128 @@
+:root {
+  --color-primary: #1E88E5;
+  --color-secondary: #43A047;
+  --color-accent: #F4511E;
+  --color-neutral-100: #FFFFFF;
+  --color-neutral-500: #9E9E9E;
+  --color-neutral-900: #212121;
+
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+
+  --font-size-h1: 2rem;
+  --font-size-h2: 1.5rem;
+  --font-size-body: 1rem;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: var(--color-neutral-200);
+  color: var(--color-neutral-900);
+}
+
+/* Header com Flexbox */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--color-primary);
+  color: var(--color-neutral-100);
+  padding: var(--space-sm);
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+  gap: var(--space-md);
+}
+
+.nav ul li ul {
+  display: none;
+  position: absolute;
+  background: var(--color-neutral-100);
+}
+
+.nav ul li:hover ul {
+  display: block;
+}
+
+/* Grid principal */
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--space-md);
+  padding: var(--space-md);
+}
+
+.card {
+  grid-column: span 6;
+  background: var(--color-neutral-100);
+  padding: var(--space-sm);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+/* Botões interativos */
+.btn {
+  background: var(--color-primary);
+  color: var(--color-neutral-100);
+  border: none;
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover { background: var(--color-secondary); }
+.btn:focus { outline: 2px solid var(--color-accent); }
+.btn:active { background: var(--color-accent); transform: scale(0.98); }
+.btn:disabled { background: var(--color-neutral-500); opacity: 0.6; }
+
+/* Formulário */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  padding: var(--space-md);
+}
+
+.form-input {
+  padding: var(--space-xs);
+  border: 1px solid var(--color-neutral-500);
+  border-radius: 4px;
+}
+
+.form-input:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 5px var(--color-primary);
+}
+
+.form-input.success {
+  border-color: var(--color-secondary);
+}
+
+.form-input.error {
+  border-color: var(--color-accent);
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-neutral-900);
+  color: var(--color-neutral-100);
+  padding: var(--space-sm);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .nav ul { display: none; flex-direction: column; }
+  .nav ul.active { display: flex; }
+  .hamburger { display: block; cursor: pointer; }
+  .card { grid-column: span 12; }
+}
